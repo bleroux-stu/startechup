@@ -176,7 +176,8 @@ body,html{
 		   margin-top: 100px;}
 		label{color: #ffffff;
 			margin-top: -15px;}
-		ul {
+		ul {position:relative;
+			z-index:2;
 			margin-left:0;
 			li{
 				float: none;
@@ -194,6 +195,8 @@ body,html{
 		 	}
 		}
 		div.small-11{
+			position:relative;
+			z-index:1;
 			text-align: center;
 			p{text-align:left;
 			  margin-top: 40px;

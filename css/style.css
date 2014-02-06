@@ -126,6 +126,8 @@ body, html {
       color: #ffffff;
       margin-top: -15px; }
     body div.outsourcing ul, body div.ourTeam ul, html div.outsourcing ul, html div.ourTeam ul {
+      position: relative;
+      z-index: 2;
       margin-left: 0; }
       body div.outsourcing ul li, body div.ourTeam ul li, html div.outsourcing ul li, html div.ourTeam ul li {
         float: none;
@@ -141,6 +143,8 @@ body, html {
           body div.outsourcing ul li, body div.ourTeam ul li, html div.outsourcing ul li, html div.ourTeam ul li {
             font-size: 4em; } }
     body div.outsourcing div.small-11, body div.ourTeam div.small-11, html div.outsourcing div.small-11, html div.ourTeam div.small-11 {
+      position: relative;
+      z-index: 1;
       text-align: center; }
       body div.outsourcing div.small-11 p, body div.ourTeam div.small-11 p, html div.outsourcing div.small-11 p, html div.ourTeam div.small-11 p {
         text-align: left;

@@ -2,6 +2,11 @@
   font-family: 'startechup';
   src: url(../fonts/startechup.ttf), url(../fonts/startechup.eot); }
 
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url("proximanova-regular.eot");
+  src: url("proximanova-regular.eot") format("embedded-opentype"), url("proximanova-regular.woff") format("woff"), url("proximanova-regular.ttf") format("truetype"), url("proximanova-regular.svg#ProximaNovaRegular") format("svg"); }
+
 .startechupIcon {
   font-family: 'startechup';
   font-size: 10em;
@@ -10,6 +15,9 @@
 
 .startechupIcon:hover {
   color: white; }
+
+h1, h2 {
+  font-family: 'ProximaNovaRegular'; }
 
 div {
   display: block; }
@@ -50,12 +58,12 @@ body, html {
     width: 100%;
     z-index: 10; }
     body div.orgMotto div, html div.orgMotto div {
-      margin-top: 13%;
+      margin-top: 16%;
       text-align: center; }
       body div.orgMotto div h1, html div.orgMotto div h1 {
         padding: 0 10px;
         display: inline-block;
-        font-size: 2.3em;
+        font-size: 2.8em;
         background: #f6a549;
         opacity: .9;
         color: #ffffff;
@@ -68,6 +76,16 @@ body, html {
           margin-top: 35%; }
           body div.orgMotto div div h1, html div.orgMotto div div h1 {
             font-size: 2em; } }
+      @media screen and (max-width: 940px) {
+        body div.orgMotto div div, html div.orgMotto div div {
+          margin-top: 50%; }
+          body div.orgMotto div div h1, html div.orgMotto div div h1 {
+            font-size: 2.3em; } }
+      @media screen and (max-width: 420px) {
+        body div.orgMotto div div, html div.orgMotto div div {
+          margin-top: 70%; }
+          body div.orgMotto div div h1, html div.orgMotto div div h1 {
+            font-size: 1.5em; } }
       body div.orgMotto div span, html div.orgMotto div span {
         color: #1d1c18; }
   body div.orbit-container, html div.orbit-container {
@@ -93,45 +111,52 @@ body, html {
       padding-top: 10%; }
       body div.aboutStartup div h2, body div.aboutStartup div p, html div.aboutStartup div h2, html div.aboutStartup div p {
         color: #ffffff; }
-  body div.techUp div, html div.techUp div {
+  body div.enterprise div, html div.enterprise div {
     padding-top: 10%; }
-    body div.techUp div h2, html div.techUp div h2 {
+    body div.enterprise div h2, html div.enterprise div h2 {
       text-align: right; }
-  body div.stuffUp, body div.ourTeam, html div.stuffUp, html div.ourTeam {
+  body div.outsourcing, body div.ourTeam, html div.outsourcing, html div.ourTeam {
     min-height: 100%;
     padding-bottom: 20px;
     background: #1d1c18; }
-    body div.stuffUp h2, body div.ourTeam h2, html div.stuffUp h2, html div.ourTeam h2 {
+    body div.outsourcing h2, body div.ourTeam h2, html div.outsourcing h2, html div.ourTeam h2 {
       color: #f6a549;
-      margin-top: 200px; }
-    body div.stuffUp label, body div.ourTeam label, html div.stuffUp label, html div.ourTeam label {
+      margin-top: 100px; }
+    body div.outsourcing label, body div.ourTeam label, html div.outsourcing label, html div.ourTeam label {
       color: #ffffff;
       margin-top: -15px; }
-    body div.stuffUp ul li, body div.ourTeam ul li, html div.stuffUp ul li, html div.ourTeam ul li {
-      float: none;
-      display: inline-block;
-      width: 18%;
+    body div.outsourcing ul, body div.ourTeam ul, html div.outsourcing ul, html div.ourTeam ul {
+      margin-left: 0; }
+      body div.outsourcing ul li, body div.ourTeam ul li, html div.outsourcing ul li, html div.ourTeam ul li {
+        float: none;
+        display: inline-block;
+        width: 18%; }
+        @media screen and (max-width: 800px) {
+          body div.outsourcing ul li, body div.ourTeam ul li, html div.outsourcing ul li, html div.ourTeam ul li {
+            font-size: 8em; } }
+        @media screen and (max-width: 600px) {
+          body div.outsourcing ul li, body div.ourTeam ul li, html div.outsourcing ul li, html div.ourTeam ul li {
+            font-size: 6em; } }
+        @media screen and (max-width: 420px) {
+          body div.outsourcing ul li, body div.ourTeam ul li, html div.outsourcing ul li, html div.ourTeam ul li {
+            font-size: 4em; } }
+    body div.outsourcing div.small-11, body div.ourTeam div.small-11, html div.outsourcing div.small-11, html div.ourTeam div.small-11 {
       text-align: center; }
-      @media screen and (max-width: 800px) {
-        body div.stuffUp ul li, body div.ourTeam ul li, html div.stuffUp ul li, html div.ourTeam ul li {
-          font-size: 8em; } }
-      @media screen and (max-width: 600px) {
-        body div.stuffUp ul li, body div.ourTeam ul li, html div.stuffUp ul li, html div.ourTeam ul li {
-          font-size: 6em; } }
-    body div.stuffUp div.small-11, body div.ourTeam div.small-11, html div.stuffUp div.small-11, html div.ourTeam div.small-11 {
-      text-align: center; }
-      body div.stuffUp div.small-11 p, body div.ourTeam div.small-11 p, html div.stuffUp div.small-11 p, html div.ourTeam div.small-11 p {
+      body div.outsourcing div.small-11 p, body div.ourTeam div.small-11 p, html div.outsourcing div.small-11 p, html div.ourTeam div.small-11 p {
         text-align: left;
         margin-top: 40px;
         color: #ffffff; }
-  body div.teamup div, html div.teamup div {
+  body div.csr div, html div.csr div {
     padding-top: 12%; }
-    body div.teamup div h3, html div.teamup div h3 {
+    body div.csr div h3, html div.csr div h3 {
       color: #ffffff; }
       @media screen and (max-width: 1000px) {
-        body div.teamup div h3, html div.teamup div h3 {
+        body div.csr div h3, html div.csr div h3 {
           font-size: 1.5em; } }
-  body div.joingroup, html div.joingroup {
+      @media screen and (max-width: 500px) {
+        body div.csr div h3, html div.csr div h3 {
+          font-size: 1.3em; } }
+  body div.otherInfo, html div.otherInfo {
     background: #f6a549;
     height: 100%;
     color: #ffffff;
@@ -160,6 +185,9 @@ body, html {
       margin-top: 4px;
       font-weight: bold;
       font-size: .8em; }
+  @media screen and (max-width: 320px) {
+    body, body header, html, html header {
+      width: 320px; } }
 
 .origin {
   background: url(../img/bgs/2.jpg) no-repeat center 2em fixed;
@@ -170,7 +198,7 @@ body, html {
   min-height: 100%;
   padding-bottom: 20px; }
 
-.techUp {
+.enterprise {
   background: url(../img/bgs/3.jpg) no-repeat center 2em fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -179,7 +207,7 @@ body, html {
   min-height: 100%;
   padding-bottom: 20px; }
 
-.teamup {
+.csr {
   background: url(../img/bgs/4.jpg) no-repeat center 2em fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -189,8 +217,9 @@ body, html {
   padding-bottom: 20px; }
 
 footer {
-  background: #1d1c18; }
+  background: #1d1c18;
+  padding: 10px 0; }
   footer p {
     text-align: center;
-    padding: 10px 0;
+    margin-bottom: 0 !important;
     color: white; }

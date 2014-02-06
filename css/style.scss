@@ -29,6 +29,14 @@ $size: 100%;
 	src: url(../fonts/startechup.ttf),
 		 url(../fonts/startechup.eot);
 }
+@font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('proximanova-regular.eot');
+    src: url('proximanova-regular.eot') format('embedded-opentype'),
+         url('proximanova-regular.woff') format('woff'),
+         url('proximanova-regular.ttf') format('truetype'),
+         url('proximanova-regular.svg#ProximaNovaRegular') format('svg');
+}
 .startechupIcon{
 	font-family: 'startechup';
 	font-size: 10em;
@@ -37,6 +45,9 @@ $size: 100%;
 }
 .startechupIcon:hover{
 	color: $white;
+}
+h1,h2{
+	font-family: 'ProximaNovaRegular';
 }
 div{
 	display:block;
@@ -82,12 +93,12 @@ body,html{
 		width: $size;
 		z-index: 10;
 		div{
-			margin-top:13%;
+			margin-top:16%;
 			text-align:center;
 			h1{	
 				padding:0 10px;
 				display:inline-block;
-				font-size:2.3em;
+				font-size:2.8em;
 				background:#f6a549;
 				opacity: .9;
 				color:#ffffff;
@@ -101,6 +112,20 @@ body,html{
 			h1{
 				font-size:2em;
 			}
+			}
+		}
+		@include media-query(940px){ 
+			div{margin-top:50%;
+				h1{
+					font-size:2.3em;
+				}
+			}
+		}
+		@include media-query(420px){ 
+			div{margin-top:70%; 
+				h1{
+					font-size:1.5em;
+				}
 			}
 		}
 			span{
@@ -137,31 +162,36 @@ body,html{
 			h2,p{color:#ffffff;}
 		}
 	}
-	div.techUp{
+	div.enterprise{
 		div{
 			padding-top: 10%;
 			h2{text-align: right;}
 		}
 	}
-	div.stuffUp{
+	div.outsourcing{
 		min-height: $size;
 		padding-bottom: 20px;
 		background:  $black;
 		h2{color:$orange;
-		   margin-top: 200px;}
+		   margin-top: 100px;}
 		label{color: #ffffff;
 			margin-top: -15px;}
-		ul li{
-			float: none;
-			display: inline-block;
-			width: 18%;
-			text-align: center;
-			@include media-query(800px){
-				font-size: 8em;
-			}
-			@include media-query(600px){
-				font-size: 6em;
-			}
+		ul {
+			margin-left:0;
+			li{
+				float: none;
+				display: inline-block;
+				width: 18%;
+				@include media-query(800px){
+					font-size: 8em;
+				}
+				@include media-query(600px){
+					font-size: 6em;
+				}
+				@include media-query(420px){
+					font-size: 4em;
+				}
+		 	}
 		}
 		div.small-11{
 			text-align: center;
@@ -170,23 +200,26 @@ body,html{
 			  color:#ffffff;}
 		}
 	}
-	div.teamup{
+	div.csr{
 		div{ padding-top:12%;
 			h3{color: #ffffff;
 			@include media-query(1000px){
 				font-size: 1.5em;
 			}
+			@include media-query(500px){
+				font-size: 1.3em;
+			}
 			}
 		}
 	}
-	div.joingroup{
+	div.otherInfo{
 		background:$orange;
 		height:$size;
 		color: #ffffff;
 		padding-top: 20%;
 	}
 	div.ourTeam{
-		@extend .stuffUp;
+		@extend .outsourcing;
 		min-height:50px;
 	}
 
@@ -203,23 +236,29 @@ body,html{
 							font-weight: bold;
 							font-size: .8em;}
 	}
+	@include media-query(320px){
+ 	&,header{
+ 		width:320px;
+ 	}
+ }
 }
 
 .origin{
 	@include background(url(../img/bgs/2.jpg))
 }
 
-.techUp{
+.enterprise{
 	@include background(url(../img/bgs/3.jpg))
 }
-.teamup{
+.csr{
 	@include background(url(../img/bgs/4.jpg))
 }
 footer{
 	background: $black;
+	padding:10px 0;
 	p{
 		text-align: center;
-		padding:10px 0;
+		margin-bottom: 0 !important;
 		color: $white;
 	}
 }

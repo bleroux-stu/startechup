@@ -1,0 +1,225 @@
+$black: #1d1c18;
+$white: #ffffff;
+$orange: #f6a549;
+$Dorange: #f8931f;
+$size: 100%;
+@mixin background($path) {
+	background: $path no-repeat center 2em fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: $size;
+	padding-bottom:20px;
+}
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin media-query($width) {
+	@media screen and (max-width: $width){
+		@content;
+	}
+}
+@font-face {
+	font-family: 'startechup';
+	src: url(../fonts/startechup.ttf),
+		 url(../fonts/startechup.eot);
+}
+.startechupIcon{
+	font-family: 'startechup';
+	font-size: 10em;
+	text-align:center;
+	color: #f6a549;
+}
+.startechupIcon:hover{
+	color: $white;
+}
+div{
+	display:block;
+}
+body,html{
+	height: $size;
+	width: $size;
+	overflow-x:hidden;
+	header{
+		padding:10px;
+		background: $black;
+		position: fixed;
+		width: $size;
+		z-index: 100;
+		dl{
+			width: auto;
+			display: inline-block;
+			float: right;	
+			margin-top:15px !important;
+			margin-bottom:0 !important;
+				dd.active a{
+					background:$orange !important;
+					}
+			}
+		@include media-query(850px){ 
+		dl{
+			float:none;}
+		}
+		a{
+			font-size:.9em;
+			margin-left:20px;
+			color:#ffffff !important;
+		}
+		@include media-query(1050px){ 
+		a{  font-size: .8em;
+			margin-left: 0;}
+		}
+	}
+	div.orgMotto{
+		min-height: $size;
+		position: absolute;
+		top: 0;
+		width: $size;
+		z-index: 10;
+		div{
+			margin-top:13%;
+			text-align:center;
+			h1{	
+				padding:0 10px;
+				display:inline-block;
+				font-size:2.3em;
+				background:#f6a549;
+				opacity: .9;
+				color:#ffffff;
+				margin-bottom:20px;
+			}
+		@include media-query(850px){ 
+		div{margin-top:20%;}
+		}
+		@include media-query(800px){ 
+		div{margin-top:35%;
+			h1{
+				font-size:2em;
+			}
+			}
+		}
+			span{
+				color: #1d1c18;
+			}
+		}
+	}
+	div.orbit-container{
+		height: $size;
+		position:relative;
+		.orbit-slides-container {
+	  		height: $size;
+	 		img {
+			    width: $size;
+			    height: $size;
+				display: inline-block;
+				vertical-align: middle;}
+	    }
+		.orbit-slides-container > * {
+		  height: 100%;}
+	}
+	div.origin{
+		div{
+			padding-top:3%;
+    		p{
+				margin-top: 50px;}
+		}
+	}
+	div.aboutStartup{
+		background:#f8931f;
+		height: $size;
+		div{
+			padding-top: 10%;
+			h2,p{color:#ffffff;}
+		}
+	}
+	div.techUp{
+		div{
+			padding-top: 10%;
+			h2{text-align: right;}
+		}
+	}
+	div.stuffUp{
+		min-height: $size;
+		padding-bottom: 20px;
+		background:  $black;
+		h2{color:$orange;
+		   margin-top: 200px;}
+		label{color: #ffffff;
+			margin-top: -15px;}
+		ul li{
+			float: none;
+			display: inline-block;
+			width: 18%;
+			text-align: center;
+			@include media-query(800px){
+				font-size: 8em;
+			}
+			@include media-query(600px){
+				font-size: 6em;
+			}
+		}
+		div.small-11{
+			text-align: center;
+			p{text-align:left;
+			  margin-top: 40px;
+			  color:#ffffff;}
+		}
+	}
+	div.teamup{
+		div{ padding-top:12%;
+			h3{color: #ffffff;
+			@include media-query(1000px){
+				font-size: 1.5em;
+			}
+			}
+		}
+	}
+	div.joingroup{
+		background:$orange;
+		height:$size;
+		color: #ffffff;
+		padding-top: 20%;
+	}
+	div.ourTeam{
+		@extend .stuffUp;
+		min-height:50px;
+	}
+
+	div.contactUs{
+		padding: 30px 0 50px 0;
+		background: $Dorange;
+		input[type="text"]{@include border-radius(12px)}
+		input[type="submit"]{@include border-radius(8px);
+							background:$black;
+							color: #ffffff;
+							padding:5px 15px;
+							border:0;
+							margin-top: 4px;
+							font-weight: bold;
+							font-size: .8em;}
+	}
+}
+
+.origin{
+	@include background(url(../img/bgs/2.jpg))
+}
+
+.techUp{
+	@include background(url(../img/bgs/3.jpg))
+}
+.teamup{
+	@include background(url(../img/bgs/4.jpg))
+}
+footer{
+	background: $black;
+	p{
+		text-align: center;
+		padding:10px 0;
+		color: $white;
+	}
+}

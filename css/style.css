@@ -1,0 +1,196 @@
+@font-face {
+  font-family: 'startechup';
+  src: url(../fonts/startechup.ttf), url(../fonts/startechup.eot); }
+
+.startechupIcon {
+  font-family: 'startechup';
+  font-size: 10em;
+  text-align: center;
+  color: #f6a549; }
+
+.startechupIcon:hover {
+  color: white; }
+
+div {
+  display: block; }
+
+body, html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; }
+  body header, html header {
+    padding: 10px;
+    background: #1d1c18;
+    position: fixed;
+    width: 100%;
+    z-index: 100; }
+    body header dl, html header dl {
+      width: auto;
+      display: inline-block;
+      float: right;
+      margin-top: 15px !important;
+      margin-bottom: 0 !important; }
+      body header dl dd.active a, html header dl dd.active a {
+        background: #f6a549 !important; }
+    @media screen and (max-width: 850px) {
+      body header dl, html header dl {
+        float: none; } }
+    body header a, html header a {
+      font-size: .9em;
+      margin-left: 20px;
+      color: #ffffff !important; }
+    @media screen and (max-width: 1050px) {
+      body header a, html header a {
+        font-size: .8em;
+        margin-left: 0; } }
+  body div.orgMotto, html div.orgMotto {
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10; }
+    body div.orgMotto div, html div.orgMotto div {
+      margin-top: 13%;
+      text-align: center; }
+      body div.orgMotto div h1, html div.orgMotto div h1 {
+        padding: 0 10px;
+        display: inline-block;
+        font-size: 2.3em;
+        background: #f6a549;
+        opacity: .9;
+        color: #ffffff;
+        margin-bottom: 20px; }
+      @media screen and (max-width: 850px) {
+        body div.orgMotto div div, html div.orgMotto div div {
+          margin-top: 20%; } }
+      @media screen and (max-width: 800px) {
+        body div.orgMotto div div, html div.orgMotto div div {
+          margin-top: 35%; }
+          body div.orgMotto div div h1, html div.orgMotto div div h1 {
+            font-size: 2em; } }
+      body div.orgMotto div span, html div.orgMotto div span {
+        color: #1d1c18; }
+  body div.orbit-container, html div.orbit-container {
+    height: 100%;
+    position: relative; }
+    body div.orbit-container .orbit-slides-container, html div.orbit-container .orbit-slides-container {
+      height: 100%; }
+      body div.orbit-container .orbit-slides-container img, html div.orbit-container .orbit-slides-container img {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle; }
+    body div.orbit-container .orbit-slides-container > *, html div.orbit-container .orbit-slides-container > * {
+      height: 100%; }
+  body div.origin div, html div.origin div {
+    padding-top: 3%; }
+    body div.origin div p, html div.origin div p {
+      margin-top: 50px; }
+  body div.aboutStartup, html div.aboutStartup {
+    background: #f8931f;
+    height: 100%; }
+    body div.aboutStartup div, html div.aboutStartup div {
+      padding-top: 10%; }
+      body div.aboutStartup div h2, body div.aboutStartup div p, html div.aboutStartup div h2, html div.aboutStartup div p {
+        color: #ffffff; }
+  body div.techUp div, html div.techUp div {
+    padding-top: 10%; }
+    body div.techUp div h2, html div.techUp div h2 {
+      text-align: right; }
+  body div.stuffUp, body div.ourTeam, html div.stuffUp, html div.ourTeam {
+    min-height: 100%;
+    padding-bottom: 20px;
+    background: #1d1c18; }
+    body div.stuffUp h2, body div.ourTeam h2, html div.stuffUp h2, html div.ourTeam h2 {
+      color: #f6a549;
+      margin-top: 200px; }
+    body div.stuffUp label, body div.ourTeam label, html div.stuffUp label, html div.ourTeam label {
+      color: #ffffff;
+      margin-top: -15px; }
+    body div.stuffUp ul li, body div.ourTeam ul li, html div.stuffUp ul li, html div.ourTeam ul li {
+      float: none;
+      display: inline-block;
+      width: 18%;
+      text-align: center; }
+      @media screen and (max-width: 800px) {
+        body div.stuffUp ul li, body div.ourTeam ul li, html div.stuffUp ul li, html div.ourTeam ul li {
+          font-size: 8em; } }
+      @media screen and (max-width: 600px) {
+        body div.stuffUp ul li, body div.ourTeam ul li, html div.stuffUp ul li, html div.ourTeam ul li {
+          font-size: 6em; } }
+    body div.stuffUp div.small-11, body div.ourTeam div.small-11, html div.stuffUp div.small-11, html div.ourTeam div.small-11 {
+      text-align: center; }
+      body div.stuffUp div.small-11 p, body div.ourTeam div.small-11 p, html div.stuffUp div.small-11 p, html div.ourTeam div.small-11 p {
+        text-align: left;
+        margin-top: 40px;
+        color: #ffffff; }
+  body div.teamup div, html div.teamup div {
+    padding-top: 12%; }
+    body div.teamup div h3, html div.teamup div h3 {
+      color: #ffffff; }
+      @media screen and (max-width: 1000px) {
+        body div.teamup div h3, html div.teamup div h3 {
+          font-size: 1.5em; } }
+  body div.joingroup, html div.joingroup {
+    background: #f6a549;
+    height: 100%;
+    color: #ffffff;
+    padding-top: 20%; }
+  body div.ourTeam, html div.ourTeam {
+    min-height: 50px; }
+  body div.contactUs, html div.contactUs {
+    padding: 30px 0 50px 0;
+    background: #f8931f; }
+    body div.contactUs input[type="text"], html div.contactUs input[type="text"] {
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      -ms-border-radius: 12px;
+      -o-border-radius: 12px;
+      border-radius: 12px; }
+    body div.contactUs input[type="submit"], html div.contactUs input[type="submit"] {
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      border-radius: 8px;
+      background: #1d1c18;
+      color: #ffffff;
+      padding: 5px 15px;
+      border: 0;
+      margin-top: 4px;
+      font-weight: bold;
+      font-size: .8em; }
+
+.origin {
+  background: url(../img/bgs/2.jpg) no-repeat center 2em fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  padding-bottom: 20px; }
+
+.techUp {
+  background: url(../img/bgs/3.jpg) no-repeat center 2em fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  padding-bottom: 20px; }
+
+.teamup {
+  background: url(../img/bgs/4.jpg) no-repeat center 2em fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  padding-bottom: 20px; }
+
+footer {
+  background: #1d1c18; }
+  footer p {
+    text-align: center;
+    padding: 10px 0;
+    color: white; }
